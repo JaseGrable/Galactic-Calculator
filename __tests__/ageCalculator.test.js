@@ -26,4 +26,8 @@ describe ('User', () => {
 test('should correctly convert users earth age into Jupiter years', () => {
     expect(user.calculator("Jupiter")).toEqual(2.53)
 })
+//Test default case behavior. If none of the above planets, returns a message 
+test('should correctly display invalid planet message when none of the above planets', () => {
+    expect(user.calculator("")).toEqual(false)
+})
 });
