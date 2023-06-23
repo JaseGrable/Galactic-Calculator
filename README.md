@@ -1,15 +1,16 @@
-# (Application Name)
+# Galactic Calculator
 
-#### (Brief Description of Application)
+#### Calculate your galactic age in Mars, Mercury, Venus, or Jupiter years.
 
-#### By (Your Name Here)
+#### By (Jase Grable)
 
 ## Technologies Used
 
-- _List all_
-- _the major technologies_
-- _you used in your project_
-- _here_
+- Javascript
+- Npm packages
+- learnhowtoprogram.com
+- Jest
+- TDD
 
 ## Description
 
@@ -23,7 +24,9 @@
 
 ## Known Bugs
 
-- _Any known issues_
-- _should go here_
+- No known current bugs
 
 ## License
+
+MIT
+Copyright 2023 Jase Grable
