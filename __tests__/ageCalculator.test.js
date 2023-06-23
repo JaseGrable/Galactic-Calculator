@@ -13,5 +13,5 @@ describe ('User', () => {
 // Determine Mercury Age 
     test('should correctly convert users age into Mercury years', ()=> {
         expect(user.calculator("Mercury")).toEqual(125)
-    })
+    });
 });
