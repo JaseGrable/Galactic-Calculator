@@ -8,6 +8,7 @@ calculator(planet) {
     let mercuryAge;
     let venusAge;
     let marsAge;
+    let jupiterAge;
   
     switch (planet) {
       case "Mercury":
@@ -19,7 +20,11 @@ calculator(planet) {
       case "Mars":
         marsAge = parseFloat((this.age/1.88).toFixed(2))
         return marsAge;
+      case "Jupiter":
+        return jupiterAge;
       default:
         return false;
+    
+
     }
 }}

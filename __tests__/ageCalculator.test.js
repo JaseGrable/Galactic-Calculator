@@ -22,4 +22,8 @@ describe ('User', () => {
     test('should correctly convert users earth age into Mars years', () => {
         expect(user.calculator("Mars")).toEqual(15.96)
     })
+//Determine Jupiter Age (11.86 Earth years)
+test('should correctly convert users earth age into Jupiter years', () => {
+    expect(user.calculator("Jupiter")).toEqual(2.53)
+})
 });
