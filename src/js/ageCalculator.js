@@ -17,6 +17,7 @@ calculator(planet) {
         venusAge = parseFloat((this.age/.62).toFixed(2));
         return venusAge;
       case "Mars":
+       
         return marsAge;
       default:
         return false;
