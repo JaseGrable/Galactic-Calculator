@@ -7,6 +7,7 @@ export default class User {
 calculator(planet) {
     let mercuryAge;
     let venusAge;
+    let marsAge;
   
     switch (planet) {
       case "Mercury":
@@ -15,6 +16,8 @@ calculator(planet) {
       case "Venus":
         venusAge = parseFloat((this.age/.62).toFixed(2));
         return venusAge;
+      case "Mars":
+        return marsAge;
       default:
         return false;
     }
