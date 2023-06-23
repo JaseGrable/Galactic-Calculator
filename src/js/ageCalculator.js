@@ -13,6 +13,7 @@ calculator(planet) {
         mercuryAge = parseFloat((this.age / 0.24).toFixed(2));
         return mercuryAge;
       case "Venus":
+        venusAge = parseFloat((this.age/.62).toFixed(2));
         return venusAge;
       default:
         return false;
