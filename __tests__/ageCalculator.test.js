@@ -2,9 +2,10 @@ import User from '../src/js/ageCalculator.js';
 
 describe ('User', () => {
     let user; 
+    let earthYears;
 
     beforeEach(() => {
-        user = new User (30);
+        user = new User(30, 20);
     });
 // Determine user's Earth age. 
     test('should correctly create a user object with a userAge property', () => {
@@ -31,4 +32,9 @@ test('should correctly return false when not one of the above planets', () => {
     expect(user.calculator("")).toEqual(false)
     expect(user.calculator("pluto")).toEqual(false)
 })
-});
+
+test('should correctly return how many years have passed on earth since a specified birthday')
+    expect(user.earthYearsPassed()).toEqual(10)
+
+
+})
