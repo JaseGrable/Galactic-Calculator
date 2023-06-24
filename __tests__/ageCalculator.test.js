@@ -40,4 +40,7 @@ test('should correctly return how many years have passed on earth since a specif
 test('should correctly return how many years have passed on mercury since specified birthday', () => {
     expect(user.mercuryYearsPassed()).toEqual(41.67)
 })
+test('should correctly return how many years have passed on venus since specified birthday', () => {
+    expect(user.venusYearsPassed()).toEqual(16.13)
+})
 })
