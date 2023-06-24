@@ -34,6 +34,8 @@ earthYearsPassed() {
     return earthYears;
 }
 mercuryYearsPassed() {
-    let mercuryYears;
+    let mercuryYears = parseFloat((this.earthYearsPassed()/.24).toFixed(2))
     return mercuryYears 
-}}
+}
+
+}
