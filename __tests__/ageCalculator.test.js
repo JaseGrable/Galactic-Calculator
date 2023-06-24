@@ -35,4 +35,9 @@ test('should correctly return false when not one of the above planets', () => {
 
 test('should correctly return how many years have passed on earth since a specified birthday', () => {
     expect(user.earthYearsPassed()).toEqual(10);
-})})
+})
+
+test('should correctly return how many years have passed on mercury since specified birthday', () => {
+    expect(user.mercuryYearsPassed()).toEqual(41.7)
+})
+})
