@@ -46,4 +46,8 @@ test('should correctly return how many years have passed on venus since specifie
 test('should correctly return how many years have passed on mars since specified birthday', () => {
     expect(user.marsYearsPassed()).toEqual(5.32)
 })
+test('should correctly return how many years have passed on mars since specified birthday', () => {
+    expect(user.jupiterYearsPassed()).toEqual(.84)
+})
+
 })

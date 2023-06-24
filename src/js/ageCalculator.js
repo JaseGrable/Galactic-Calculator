@@ -45,4 +45,8 @@ marsYearsPassed() {
     let marsYears = parseFloat((this.earthYearsPassed()/1.88).toFixed(2))
     return marsYears
 }
+jupiterYearsPassed() {
+    let jupiterYears  
+    return jupiterYears
+}
 }
