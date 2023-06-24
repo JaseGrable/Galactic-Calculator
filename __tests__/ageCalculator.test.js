@@ -33,8 +33,6 @@ test('should correctly return false when not one of the above planets', () => {
     expect(user.calculator("pluto")).toEqual(false)
 })
 
-test('should correctly return how many years have passed on earth since a specified birthday')
-    expect(user.earthYearsPassed()).toEqual(10)
-
-
-})
+test('should correctly return how many years have passed on earth since a specified birthday', () => {
+    expect(user.earthYearsPassed()).toEqual(10);
+})})

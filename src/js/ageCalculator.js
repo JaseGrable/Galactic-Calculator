@@ -30,6 +30,6 @@ calculator(planet) {
 }
 
 earthYearsPassed() {
-    let earthYears = this.age - this.previousAge;
+  
     return earthYears;
 }}
