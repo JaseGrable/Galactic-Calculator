@@ -38,7 +38,7 @@ mercuryYearsPassed() {
     return mercuryYears 
 }
 venusYearsPassed() {
-    let venusYears
+    let venusYears = parseFloat((this.earthYearsPassed()/.62).toFixed(2))
     return venusYears 
 }
 }
