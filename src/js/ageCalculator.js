@@ -73,6 +73,7 @@ calculateYearsUntil(planet) {
             venusYearsUntil = parseFloat((earthYearsUntil/.62).toFixed(2));
             return venusYearsUntil;
         case "Mars":
+            marsYearsUntil = parseFloat((earthYearsUntil/1.88).toFixed(2));
             return marsYearsUntil
     }
 }
