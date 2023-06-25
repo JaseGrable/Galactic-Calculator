@@ -68,4 +68,9 @@ test ('should correctly return Mars years until next birthday', () => {
 test ('should correctly return Jupiter years until next birthday', () => {
     expect(user.calculateYearsUntil("Jupiter")).toEqual(1.26)
 })
+
+test('should correctly return Invalid Planet when one of the above planets have been selected', () => {
+    expect(user.calculateYearsUntil("Pluto")).toBe('Invalid Planet')
+    expect(user.calculateYearsUntil(" ")).toBe('Invalid Planet')
+})
 })
