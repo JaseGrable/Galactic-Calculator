@@ -65,7 +65,7 @@ calculateYearsUntil(planet) {
         case 'Earth':
             return earthYearsUntil;
         case 'Mercury': 
-            
+            mercuryYearsUntil = parseFloat((earthYearsUntil/.24).toFixed(2))
             return mercuryYearsUntil
     }
 }
