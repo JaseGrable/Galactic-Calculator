@@ -77,7 +77,7 @@ calculateYearsUntil(planet) {
             marsYearsUntil = parseFloat((earthYearsUntil/1.88).toFixed(2));
             return marsYearsUntil;
         case 'Jupiter':
-            
+            jupiterYearsUntil = parseFloat((earthYearsUntil/11.86).toFixed(2));
             return jupiterYearsUntil;
     }
 }
