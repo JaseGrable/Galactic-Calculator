@@ -60,4 +60,7 @@ test ('should correctly return Earth years until next birthday', () => {
 test ('should correctly return Mercury years until next birthday', () => {
     expect(user.calculateYearsUntil("Mercury")).toEqual(62.5)
 })
+test ('should correctly return Venus years until next birthday', () => {
+    expect(user.calculateYearsUntil("Venus")).toEqual(24.20)
+})
 })
