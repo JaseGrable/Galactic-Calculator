@@ -58,11 +58,15 @@ calculateYearsPassed(planet) {
   }
 
 calculateYearsUntil(planet) {
-    let earthYearsUntil 
+    let earthYearsUntil = this.futureAge - this.age;
+    let mercuryYearsUntil
 
     switch (planet) {
         case 'Earth':
             return earthYearsUntil;
+        case 'Mercury': 
+            
+            return mercuryYearsUntil
     }
 }
 }

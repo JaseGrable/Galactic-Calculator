@@ -57,4 +57,7 @@ test('should correctly return Invalid Planet when one of the above planets have 
 test ('should correctly return Earth years until next birthday', () => {
     expect(user.calculateYearsUntil("Earth")).toEqual(15)
 })
+test ('should correctly return Mercury years until next birthday', () => {
+    expect(user.calculateYearsUntil("Mercury")).toEqual(62.5)
+})
 })
