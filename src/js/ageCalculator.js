@@ -27,8 +27,7 @@ calculator(planet) {
         return jupiterAge;
       default:
         return 'Invalid Planet';
-    }
-}
+    }}
 
 calculateYearsPassed(planet) {
     let earthYears = this.age - this.previousAge;
@@ -54,8 +53,7 @@ calculateYearsPassed(planet) {
         return jupiterYearsPassed
       default:
         return 'Invalid Planet';
-    }
-  }
+    }}
 
 calculateYearsUntil(planet) {
     let earthYearsUntil = this.futureAge - this.age;
@@ -81,6 +79,4 @@ calculateYearsUntil(planet) {
             return jupiterYearsUntil;
         default:
             return 'Invalid Planet';
-    }
-}
-}
+    }}}
