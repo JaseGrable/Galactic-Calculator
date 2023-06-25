@@ -49,5 +49,8 @@ test('should correctly return how many years have passed on mars since specified
 test('should correctly return how many years have passed on jupiter since specified birthday', () => {
     expect(user.calculateYearsPassed("Jupiter")).toEqual(.84)
 })
-
+test('should correctly return Invalid Planet when one of the above planets have been selected', () => {
+    expect(user.calculateYearsPassed("Pluto")).toBe('Invalid Planet')
+    expect(user.calculateYearsPassed(" ")).toBe('Invalid Planet')
+})
 })

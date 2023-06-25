@@ -52,7 +52,7 @@ calculateYearsPassed(planet) {
       jupiterYearsPassed = parseFloat((earthYears / 11.86).toFixed(2));
         return jupiterYearsPassed
       default:
-        return 'Invalid planet';
+        return 'Invalid Planet';
     }
   }
 }
