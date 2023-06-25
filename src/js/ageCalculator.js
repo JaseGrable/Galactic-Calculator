@@ -29,31 +29,8 @@ calculator(planet) {
     }
 }
 
-// earthYearsPassed() {
-//     let earthYears = this.age - this.previousAge;
-//     return earthYears;
-// }
-// mercuryYearsPassed() {
-//     let mercuryYears = parseFloat((this.earthYearsPassed()/.24).toFixed(2))
-//     return mercuryYears 
-// }
-// venusYearsPassed() {
-//     let venusYears = parseFloat((this.earthYearsPassed()/.62).toFixed(2))
-//     return venusYears 
-// }
-// marsYearsPassed() {
-//     let marsYears = parseFloat((this.earthYearsPassed()/1.88).toFixed(2))
-//     return marsYears
-// }
-// jupiterYearsPassed() {
-//     let jupiterYears = parseFloat((this.earthYearsPassed()/11.86).toFixed(2))
-//     return jupiterYears
-// }
-// }
-
 calculateYearsPassed(planet) {
     let earthYears = this.age - this.previousAge;
-    let yearsPassed;
     let mercuryYearsPassed;
     let venusYearsPassed;
     let marsYearsPassed;
@@ -61,7 +38,6 @@ calculateYearsPassed(planet) {
 
     switch (planet) {
       case 'Earth':
-        yearsPassed = earthYears;
         return earthYears;
       case 'Mercury':
         mercuryYearsPassed = parseFloat((earthYears / 0.24).toFixed(2));
@@ -76,9 +52,7 @@ calculateYearsPassed(planet) {
       jupiterYearsPassed = parseFloat((earthYears / 11.86).toFixed(2));
         return jupiterYearsPassed
       default:
-        yearsPassed = 'Invalid planet';
+        return 'Invalid planet';
     }
-
-    return yearsPassed;
   }
 }
