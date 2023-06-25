@@ -61,6 +61,7 @@ calculateYearsUntil(planet) {
     let earthYearsUntil = this.futureAge - this.age;
     let mercuryYearsUntil
     let venusYearsUntil 
+    let marsYearsUntil
 
     switch (planet) {
         case 'Earth':
@@ -71,6 +72,8 @@ calculateYearsUntil(planet) {
         case 'Venus':
             venusYearsUntil = parseFloat((earthYearsUntil/.62).toFixed(2));
             return venusYearsUntil;
+        case "Mars":
+            return marsYearsUntil
     }
 }
 }
