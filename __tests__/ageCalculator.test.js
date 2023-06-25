@@ -5,7 +5,7 @@ describe ('User', () => {
     let earthYears;
 
     beforeEach(() => {
-        user = new User(30, 20);
+        user = new User(30, 20, 45);
     });
 // Determine user's Earth age. 
     test('should correctly create a user object with a userAge property', () => {
@@ -52,5 +52,9 @@ test('should correctly return how many years have passed on jupiter since specif
 test('should correctly return Invalid Planet when one of the above planets have been selected', () => {
     expect(user.calculateYearsPassed("Pluto")).toBe('Invalid Planet')
     expect(user.calculateYearsPassed(" ")).toBe('Invalid Planet')
+})
+
+test ('should correctly return Earth years until next birthday', () => {
+    expect(user.calculateYearsUntil("Earth")).toEqual(15)
 })
 })

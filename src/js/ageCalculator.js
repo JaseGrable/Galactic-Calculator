@@ -1,7 +1,8 @@
 export default class User {
-    constructor(age, previousAge) {
+    constructor(age, previousAge, futureAge) {
         this.age = age;
         this.previousAge = previousAge;   
+        this.futureAge = futureAge;
 }
 
 //Age calculator for Mercury, Venus, Mars, Jupiter 
@@ -55,4 +56,13 @@ calculateYearsPassed(planet) {
         return 'Invalid Planet';
     }
   }
+
+calculateYearsUntil(planet) {
+    let earthYearsUntil 
+
+    switch (planet) {
+        case 'Earth':
+            return earthYearsUntil;
+    }
+}
 }
