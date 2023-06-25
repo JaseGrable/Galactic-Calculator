@@ -69,6 +69,7 @@ calculateYearsUntil(planet) {
             mercuryYearsUntil = parseFloat((earthYearsUntil/.24).toFixed(2));
             return mercuryYearsUntil;
         case 'Venus':
+            venusYearsUntil = parseFloat((earthYearsUntil/.62).toFixed(2));
             return venusYearsUntil;
     }
 }
