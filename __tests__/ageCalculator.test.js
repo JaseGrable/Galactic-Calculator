@@ -34,20 +34,20 @@ test('should correctly return false when not one of the above planets', () => {
 })
 
 test('should correctly return how many years have passed on earth since a specified birthday', () => {
-    expect(user.earthYearsPassed()).toEqual(10);
+    expect(user.calculateYearsPassed("Earth")).toEqual(10);
 })
 
 test('should correctly return how many years have passed on mercury since specified birthday', () => {
-    expect(user.mercuryYearsPassed()).toEqual(41.67)
+    expect(user.calculateYearsPassed("Mercury")).toEqual(41.67)
 })
 test('should correctly return how many years have passed on venus since specified birthday', () => {
-    expect(user.venusYearsPassed()).toEqual(16.13)
+    expect(user.calculateYearsPassed("Venus")).toEqual(16.13)
 })
 test('should correctly return how many years have passed on mars since specified birthday', () => {
-    expect(user.marsYearsPassed()).toEqual(5.32)
+    expect(user.calculateYearsPassed("Mars")).toEqual(5.32)
 })
-test('should correctly return how many years have passed on mars since specified birthday', () => {
-    expect(user.jupiterYearsPassed()).toEqual(.84)
+test('should correctly return how many years have passed on jupiter since specified birthday', () => {
+    expect(user.calculateYearsPassed("Jupiter")).toEqual(.84)
 })
 
 })
