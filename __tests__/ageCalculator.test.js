@@ -29,8 +29,8 @@ test('should correctly convert users earth age into Jupiter years', () => {
 })
 //Test default case behavior. Should return false when not one of the above planets 
 test('should correctly return false when not one of the above planets', () => {
-    expect(user.calculator("")).toEqual(false)
-    expect(user.calculator("pluto")).toEqual(false)
+    expect(user.calculator("")).toBe('Invalid Planet')
+    expect(user.calculator("pluto")).toBe('Invalid Planet')
 })
 
 test('should correctly return how many years have passed on earth since a specified birthday', () => {
