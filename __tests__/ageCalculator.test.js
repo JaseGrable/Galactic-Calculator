@@ -2,7 +2,6 @@ import User from '../src/js/ageCalculator.js';
 
 describe ('User', () => {
     let user; 
-    let earthYears;
 
     beforeEach(() => {
         user = new User(30, 20, 45);
@@ -65,5 +64,8 @@ test ('should correctly return Venus years until next birthday', () => {
 })
 test ('should correctly return Mars years until next birthday', () => {
     expect(user.calculateYearsUntil("Mars")).toEqual(7.98)
+})
+test ('should correctly return Jupiter years until next birthday', () => {
+    expect(user.calculateYearsUntil("Jupiter")).toEqual(1.25)
 })
 })

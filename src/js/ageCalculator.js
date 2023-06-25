@@ -59,9 +59,10 @@ calculateYearsPassed(planet) {
 
 calculateYearsUntil(planet) {
     let earthYearsUntil = this.futureAge - this.age;
-    let mercuryYearsUntil
-    let venusYearsUntil 
-    let marsYearsUntil
+    let mercuryYearsUntil;
+    let venusYearsUntil;
+    let marsYearsUntil;
+    let jupiterYearsUntil;
 
     switch (planet) {
         case 'Earth':
@@ -72,9 +73,12 @@ calculateYearsUntil(planet) {
         case 'Venus':
             venusYearsUntil = parseFloat((earthYearsUntil/.62).toFixed(2));
             return venusYearsUntil;
-        case "Mars":
+        case 'Mars':
             marsYearsUntil = parseFloat((earthYearsUntil/1.88).toFixed(2));
-            return marsYearsUntil
+            return marsYearsUntil;
+        case 'Jupiter':
+            
+            return jupiterYearsUntil;
     }
 }
 }
