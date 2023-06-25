@@ -79,6 +79,8 @@ calculateYearsUntil(planet) {
         case 'Jupiter':
             jupiterYearsUntil = parseFloat((earthYearsUntil/11.86).toFixed(2));
             return jupiterYearsUntil;
+        default:
+            return 'Invalid Planet';
     }
 }
 }
